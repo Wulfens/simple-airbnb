@@ -1,0 +1,12 @@
+
+<div class="container">
+  <h1 class="text-center" >Flats</h1>
+  <ul class="list-group">
+    <% @flats.each do |flat| %>
+      <li class="list-group-item">
+        <h2><%= flat["name"] %></h2>
+        <p><%= flat["price"] %> <%= flat["priceCurrency"] %></p>
+      </li>
+    <% end %>
+  </ul>
+</div>
